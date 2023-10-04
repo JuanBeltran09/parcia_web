@@ -37,10 +37,15 @@
                         </div>
                         <div class="form-group">
                             <label for="tipo">Tipo de Actividad:</label>
-                            <input type="text" class="form-control" id="tipo" name="tipo" required>
+                            <select class="form-control" id="tipo" name="tipo" required>
+                                <option value="Taller">Taller</option>
+                                <option value="Evaluación">Evaluación</option>
+                                <option value="Proyecto">Proyecto</option>
+                                <option value="Otro">Otro</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="fechaInicio">Fecha de Inicio:</label>
+                            <label for="fechaInicio">Fecha de Actividad:</label>
                             <input type="date" class="form-control" id="fechaInicio" name="fechaInicio" required>
                         </div>
                         <div class="form-group">
