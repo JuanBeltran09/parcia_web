@@ -11,10 +11,6 @@
             subjects.forEach( subject => {
                 const row = document.createElement("tr")
 
-                const colId = document.createElement("td")
-                colId.appendChild( document.createTextNode( subject.id ) );
-                row.appendChild( colId )
-
                 const colName = document.createElement("td")
                 colName.appendChild( document.createTextNode(subject.name))
                 row.appendChild( colName )
