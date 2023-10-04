@@ -12,7 +12,11 @@
                 const row = document.createElement("tr")
 
                 const colName = document.createElement("td")
-                colName.appendChild( document.createTextNode(subject.name))
+                const link =document.createElement("a")
+
+                link.appendChild(document.createTextNode(subject.name))
+                link.href = "../index.jsp"
+                colName.appendChild( link)
                 row.appendChild( colName )
 
                 tbody.appendChild(row)
