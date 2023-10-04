@@ -1,3 +1,8 @@
+document.getElementById('idSubject').addEventListener('keypress',(event)=>{
+    if(!(/[0-9]/.test(event.key))){
+        event.preventDefault()
+    }
+})
 document.getElementById('btnSend').addEventListener('click',()=>{
     const idSubject = document.getElementById('idSubject').value
     const name = document.getElementById('name').value
@@ -11,19 +16,6 @@ document.getElementById('btnSend').addEventListener('click',()=>{
             if( xhr.responseText ){
                 const subject = JSON.parse(xhr.responseText)
                 alert("La asignatura se inserto satisfactoriamente")
-
-                const tbody = document.getElementById('tBody')
-                const row = document.createElement("tr")
-
-                const colId = document.createElement("td")
-                colId.appendChild(document.createTextNode(subject.id))
-                row.appendChild( colId)
-
-                const colName= document.createElement("td")
-                colName.appendChild(document.createTextNode(subject.name))
-                row.appendChild( colName)
-
-                tbody.appendChild(row)
             }else{
                 alert("No fue posible Insertar el Registro")
             }
