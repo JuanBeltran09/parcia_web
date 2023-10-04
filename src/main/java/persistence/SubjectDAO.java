@@ -77,11 +77,11 @@ public class SubjectDAO implements InterfaceDAO<Subject>{
     }
 
     @Override
-    public boolean add(Subject student) {
+    public boolean add(Subject subject) {
 
-        String id = String.valueOf(student.getId());
+        String id = String.valueOf(subject.getId());
 
-        String name = student.getName();
+        String name = subject.getName();
 
         try{
             Class.forName(DRIVER);
@@ -92,7 +92,7 @@ public class SubjectDAO implements InterfaceDAO<Subject>{
                 Connection connection = DriverManager.getConnection(URL, USER,PASSWORD);
                 Statement statement = connection.createStatement();
         ){
-            String query = "INSERT INTO asignaturas  VALUES('" + id + "','" + name  + "')";
+            String query = "INSERT INTO asignaturas VALUES('" + id + "','" + name  + "')";
 
             int rows = statement.executeUpdate( query );
 
