@@ -8,10 +8,25 @@
   <link rel="icon" type="image/x-icon" href="../img/mainLogo.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <link rel="stylesheet" type="text/css" href="../Styles/indexStyles.css">
+
+  <link rel="stylesheet" type="text/css" href="../Styles/subjectAdd.css">
 </head>
 
 <body>
+
+
+<header>
+
+  <nav class="navbar bg-body-tertiary" id="navarid">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.jsp" id="navarText">
+        <img src="../img/mainLogo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        Notas
+      </a>
+    </div>
+  </nav>
+</header>
+
 <div class="container mt-5">
   <h2>Formulario de Asignatura</h2>
   <form>
