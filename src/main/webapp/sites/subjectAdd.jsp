@@ -33,6 +33,6 @@
   <a href="../index.jsp">Menu</a>
 </div>
 
-<script src="../scripts.js"></script>
+<script src="../script/scripts.js"></script>
 </body>
 </html>
