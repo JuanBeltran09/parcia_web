@@ -27,7 +27,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
-                    <h1 class="card-title">Menú de Asignaturas</h1>
+                    <h1 class="card-title">Menú Principal</h1>
                     <ul class="list-group">
                         <li class="list-group-item">
                             <a href="sites/subjectAdd.jsp">Crear Asignaturas</a>
