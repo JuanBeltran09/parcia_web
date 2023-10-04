@@ -44,6 +44,7 @@
                         </tbody>
                     </table>
                     <button class="btn btn-primary float-right" id="volverBtn">Volver</button>
+
                 </div>
             </div>
         </div>
