@@ -32,7 +32,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-body">
-          <h2 class="card-title">Formulario de Asignatura</h2>
+          <h2 class="card-title">Agregar Asignatura</h2>
           <form>
             <div class="mb-3">
               <label for="idSubject" class="form-label">Id</label>
