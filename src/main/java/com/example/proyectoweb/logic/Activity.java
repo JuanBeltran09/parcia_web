@@ -10,15 +10,15 @@ public class Activity {
 
     private String type;
 
-    private LocalDate birthday;
+    private LocalDate date;
 
     private Double percentage;
 
-    public Activity(Integer id, String name, String type, LocalDate birthday, Double percentage) {
+    public Activity(Integer id, String name, String type, LocalDate date, Double percentage) {
         this.id = id;
         this.name = name;
         this.type = type;
-        this.birthday = birthday;
+        this.date = date;
         this.percentage = percentage;
     }
 
@@ -46,12 +46,12 @@ public class Activity {
         this.type = type;
     }
 
-    public LocalDate getBirthday() {
-        return birthday;
+    public LocalDate getDate() {
+        return date;
     }
 
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+    public void setDate(LocalDate date) {
+        this.date = date;
     }
 
     public Double getPercentage() {
@@ -68,7 +68,7 @@ public class Activity {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", type='" + type + '\'' +
-                ", birthday=" + birthday +
+                ", birthday=" + date +
                 ", percentage=" + percentage +
                 '}';
     }
