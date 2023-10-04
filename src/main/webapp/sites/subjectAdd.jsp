@@ -45,7 +45,7 @@
 
 <div id="container">
 
-  <a href="../index.jsp">Menu</a>
+
 </div>
 
 <script src="../script/scripts.js"></script>

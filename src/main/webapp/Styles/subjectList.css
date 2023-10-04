@@ -1,0 +1,16 @@
+body {
+    background-image: url('../img/mainBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+#navarid {
+    background-color: rgba(255, 204, 41, 0.8)
+}
+
+
+#navarText{
+    color: black;
+}
