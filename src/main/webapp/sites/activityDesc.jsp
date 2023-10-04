@@ -31,23 +31,16 @@
                 <div class="card-body">
                     <h1 class="card-title">Información De La Actividad</h1>
                     <table class="table">
-                        <tbody>
+                        <thead>
                         <tr>
-                            <td>Nombre de la Actividad</td>
-                            <td></td>
+                            <th>Nombre de la Actividad</th>
+                            <th>Tipo de Actividad</th>
+                            <th>Fecha de Actividad</th>
+                            <th>Ponderado</th>
                         </tr>
-                        <tr>
-                            <td>Tipo de Actividad</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Fecha de Actividad</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Ponderado</td>
-                            <td></td>
-                        </tr>
+                        </thead>
+                        <tbody id="tBody">
+
                         </tbody>
                     </table>
                     <button class="btn btn-primary float-right" id="volverBtn">Volver</button>
@@ -57,18 +50,6 @@
     </div>
 </div>
 
-<script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var volverBtn = document.getElementById('volverBtn');
-
-        volverBtn.addEventListener('click', function () {
-
-            window.location.href = 'activityList.jsp';
-        });
-    });
-
-</script>
-
+<script src="../script/scriptDesc.js"></script>
 </body>
 </html>

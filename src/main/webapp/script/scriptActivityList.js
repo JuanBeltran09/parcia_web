@@ -30,7 +30,11 @@ function getUrlParameter(name) {
 
                     link.appendChild(document.createTextNode(subject.name))
 
-                    link.href = "../sites/subjectList.jsp?id="+subject.id
+                    const subjectJson = JSON.stringify(subject);
+                    const encodedSubjectJson = encodeURIComponent(subjectJson);
+                    const url = `../sites/activityDesc.jsp?subjectData=${encodedSubjectJson}`;
+
+                    link.href = url;
                     colName.appendChild( link)
                     row.appendChild( colName )
 
