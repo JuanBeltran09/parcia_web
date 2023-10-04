@@ -1,7 +1,5 @@
 package com.example.proyectoweb.logic;
 
-import java.time.LocalDate;
-
 public class Subject {
     private Integer id;
 
