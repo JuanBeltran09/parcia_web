@@ -15,7 +15,8 @@
                 const link =document.createElement("a")
 
                 link.appendChild(document.createTextNode(subject.name))
-                link.href = "../index.jsp"
+
+                link.href = "../sites/activityAdd.jsp?id="+subject.id
                 colName.appendChild( link)
                 row.appendChild( colName )
 

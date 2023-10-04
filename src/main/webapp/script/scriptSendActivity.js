@@ -1,15 +1,11 @@
-document.getElementById('idSubject').addEventListener('keypress',(event)=>{
-    if(!(/[0-9]/.test(event.key))){
-        event.preventDefault()
-    }
-})
-document.getElementById('btnSend').addEventListener('click',()=>{
+
+document.getElementById('AddActivityBtn').addEventListener('click',()=>{
     const idSubject = document.getElementById('idSubject').value
     const name = document.getElementById('name').value
 
     const xhr = new XMLHttpRequest()
 
-    xhr.open("POST","../add-subject",true)
+    xhr.open("POST","../add-activity",true)
 
     xhr.onreadystatechange = ()=>{
         if( xhr.readyState === 4 && xhr.status === 200 ){

@@ -103,7 +103,7 @@ public class ActivityDAO implements InterfaceDAO<Activity>{
                 Connection connection = DriverManager.getConnection(URL, USER,PASSWORD);
                 Statement statement = connection.createStatement();
         ){
-            String query = "INSERT INTO asignaturas  VALUES('" + id + "','" + name  + "')";
+            String query = "INSERT INTO actividades  VALUES('" + id + "','" + name  + "','" + type  + "','" + date  + "','" + percentage  + "')";
 
             int rows = statement.executeUpdate( query );
 
