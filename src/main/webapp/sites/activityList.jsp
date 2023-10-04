@@ -37,29 +37,30 @@
                             <th>Actividades</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tBody">
 
                         </tbody>
                     </table>
                     <button class="btn btn-primary float-right" data-toggle="modal" data-target="#agregarActividadModal" id="AddActivityBtn">Agregar Actividad</button>
+                    <%
+                        String idParameter = request.getParameter("id");
+
+                        if (idParameter != null && !idParameter.isEmpty()) {
+                    %>
+                    <script>
+                        document.getElementById('AddActivityBtn').addEventListener('click',()=>{
+
+                            window.location.href = "../sites/activityAdd.jsp?id="+'<%=idParameter%>'
+                        });
+                    </script>
+                    <%
+                        }
+                    %>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var addActivityBtn = document.getElementById('AddActivityBtn');
-
-        addActivityBtn.addEventListener('click', function () {
-
-            window.location.href = 'activityAdd.jsp';
-        });
-    });
-
-</script>
-
+<script src="../script/scriptActivityList.js"></script>
 </body>
 </html>
