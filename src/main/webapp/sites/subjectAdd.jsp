@@ -28,19 +28,26 @@
 </header>
 
 <div class="container mt-5">
-  <h2>Formulario de Asignatura</h2>
-  <form>
-    <div class="mb-3">
-      <label for="name" class="form-label">Id</label>
-      <input type="text" class="form-control" id="idSubject" name="idSubject  " placeholder="Ingresa el codigo de la asignatura" required>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Formulario de Asignatura</h2>
+          <form>
+            <div class="mb-3">
+              <label for="idSubject" class="form-label">Id</label>
+              <input type="text" class="form-control" id="idSubject" name="idSubject" placeholder="Ingresa el código de la asignatura" required>
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre de la Asignatura</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa el nombre de la asignatura" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btnSend">Enviar</button>
+          </form>
+        </div>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="name" class="form-label">Nombre de la Asignatura</label>
-      <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa el nombre de la asignatura" required>
-    </div>
-    <button type="submit" class="btn btn-primary" id="btnSend">Enviar</button>
-  </form>
-
+  </div>
 </div>
 
 <div id="container">
