@@ -12,7 +12,7 @@
 </head>
 <body>
 
-
+<header>
 <nav class="navbar bg-body-tertiary" id="navarid">
     <div class="container-fluid">
         <a class="navbar-brand" href="../index.jsp" id="navarText">
