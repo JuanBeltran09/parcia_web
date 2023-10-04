@@ -1,7 +1,10 @@
 
 document.getElementById('AddActivityBtn').addEventListener('click',()=>{
-    const idSubject = document.getElementById('idSubject').value
-    const name = document.getElementById('name').value
+    const id = document.getElementById('id').value
+    const nombre = document.getElementById('nombre').value
+    const tipo = document.getElementById('tipo').value
+    const fechaInicio = document.getElementById('fechaInicio').value
+    const ponderado = document.getElementById('ponderado').value
 
     const xhr = new XMLHttpRequest()
 
@@ -18,6 +21,6 @@ document.getElementById('AddActivityBtn').addEventListener('click',()=>{
         }
     }
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
-    const data = `name=${name}&idSubject=${idSubject}`
+    const data = `nombre=${nombre}&id=${id}&tipo=${tipo}&fechaInicio=${fechaInicio}&ponderado=${ponderado}`
     xhr.send(data)
 })

@@ -1,5 +1,4 @@
 import com.example.proyectoweb.logic.Activity;
-import com.example.proyectoweb.logic.Subject;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import jakarta.servlet.ServletException;
@@ -8,7 +7,6 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import persistence.ActivityDAO;
-import persistence.SubjectDAO;
 
 import java.io.IOException;
 import java.io.PrintWriter;
