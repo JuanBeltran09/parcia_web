@@ -22,7 +22,7 @@
                             <th>Asignatura</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="tBody">
                         </tbody>
                     </table>
                 </div>
@@ -31,6 +31,6 @@
     </div>
 </div>
 
-
+<script src="../script/scripList.js"></script>
 </body>
 </html>
